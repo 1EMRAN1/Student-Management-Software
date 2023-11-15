@@ -15,11 +15,11 @@ void modify();
 void deleterec();
 struct student
 {
-    char name[20];
+    char name[25];
     char mobile[10];
-    int rollno;
+    int idno;
     char course[20];
-    char branch[20];
+    char batch[20];
 };
 int main()
 {
@@ -113,16 +113,16 @@ void add()
         printf("Enter Mobile Number : ");
         gets(std.mobile);
         gotoxy(10,9);
-        printf("Enter Roll No : ");
-        scanf("%d",&std.rollno);
+        printf("Enter id No : ");
+        scanf("%d",&std.idno);
         fflush(stdin);
         gotoxy(10,10);
         printf("Enter Course : ");
 //        gets(std.course);///???
         gets(std.course);
         gotoxy(10,11);
-        printf("Enter Branch : ");
-        gets(std.branch);
+        printf("Enter Batch : ");
+        gets(std.batch);
 //        gotoxy(10,12);
 //        printf("Enter Father's Name : ");
 //        gets(std.fathername);
